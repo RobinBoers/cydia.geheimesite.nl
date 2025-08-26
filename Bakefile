@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-deploy() {
-  lift deploy
-}
-
 build() {
   dpkg-scanpackages -m debs > Packages
   sed -i '' -E '/^(Homepage|Depiction|Sponsor|Tag)/d' Packages
@@ -16,4 +12,8 @@ build() {
 
 serve() {
   waiter --dev
+}
+
+deploy() {
+  lift deploy
 }
