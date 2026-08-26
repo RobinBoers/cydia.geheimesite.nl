@@ -1,11 +1,11 @@
+type: static
+host: nov.dupunk.to
 services:
 - name: landing
-  type: static
-  host: nov
   src: index.html
   target: cydia.geheimesite.nl
 - name: cydia
-  type: static
-  host: nov
   src: .
   target: cydia.geheimesite.nl/repo
+  exclude:
+  - index.html
