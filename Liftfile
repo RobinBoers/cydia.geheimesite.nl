@@ -1,5 +1,5 @@
 type: static
-runner: nov.dupunk.to
+cluster: dupunk.to
 services:
 - name: landing
   src: index.html
